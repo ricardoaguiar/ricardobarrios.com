@@ -1,4 +1,4 @@
-const strapiBaseUri = process.env.API_URL
+const strapiBaseUri = process.env.API_URL || 'http://localhost:1337'
 
 export default {
   env: {
@@ -13,6 +13,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'frontend',
+    script: [{ src: 'https://js.stripe.com/v3/' }],
     htmlAttrs: {
       lang: 'en',
     },
@@ -23,7 +24,6 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: 'https://js.stripe.com/v3/' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -47,7 +47,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: `${strapiBaseUri}/graphql`,
+        httpEndpoint: `${strapiBaseUri}/`,
       },
     },
   },
