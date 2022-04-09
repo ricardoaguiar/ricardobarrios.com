@@ -44,17 +44,17 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/http', '@nuxtjs/apollo'],
 
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: `${strapiBaseUri}/`,
-      },
-    },
-  },
-
   http: {
     baseURL: `${strapiBaseUri}/api`,
     browserBaseURL: `${strapiBaseUri}/api`,
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: `${strapiBaseUri}/graphql`,
+      },
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
