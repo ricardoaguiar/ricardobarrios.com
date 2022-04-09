@@ -1,6 +1,6 @@
 <template>
   <div class="uk-container uk-container-xsmall">
-    <h2 class="uk-heading-small">
+    <h1 class="uk-heading-small">
       <span class="uk-invisible">Restaurants</span>
       <input
         v-model="query"
@@ -8,7 +8,7 @@
         type="search"
         placeholder="Type to search"
       />
-    </h2>
+    </h1>
 
     <div
       v-for="restaurant in filteredList"
