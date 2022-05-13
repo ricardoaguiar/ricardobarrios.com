@@ -15,7 +15,7 @@ export default {
     title: 'frontend',
     script: [{ src: 'https://js.stripe.com/v3/' }],
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
@@ -52,7 +52,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: `${strapiBaseUri}/graphql`
+        httpEndpoint: `https://ricardoaguiar.herokuapp.com/graphql`
         // httpEndpoint: "http://localhost:1337/graphql"
       }
     }
