@@ -38,7 +38,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,17 +46,18 @@ export default {
 
   http: {
     baseURL: `${strapiBaseUri}/api`,
-    browserBaseURL: `${strapiBaseUri}/api`,
+    browserBaseURL: `${strapiBaseUri}/api`
   },
 
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: `${strapiBaseUri}/graphql`,
-      },
-    },
+        httpEndpoint: `${strapiBaseUri}/graphql` || "http://localhost:1337/graphql"
+        // httpEndpoint: "http://localhost:1337/graphql"
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {}
 }
