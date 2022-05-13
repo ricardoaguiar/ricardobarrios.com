@@ -52,7 +52,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: `${strapiBaseUri}/graphql` || "http://localhost:1337/graphql"
+        httpEndpoint: `${strapiBaseUri}/graphql`
         // httpEndpoint: "http://localhost:1337/graphql"
       }
     }
