@@ -1,7 +1,7 @@
 <template>
   <div>
     <ContentDoc>
-      <Markdown />
+      <NuxtPage />
     </ContentDoc>
   </div>
 </template>
