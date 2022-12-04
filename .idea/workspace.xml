@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec21def-9448-4355-9fe6-91b512bfc8d7" name="Changes" comment="updated app">
-      <change afterPath="$PROJECT_DIR$/bak/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/app.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/content/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/nuxt.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/pages/[...slug].vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bak/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="8ec21def-9448-4355-9fe6-91b512bfc8d7" name="Changes" comment="updated app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +82,7 @@
       <updated>1669994004119</updated>
       <workItem from="1669994005560" duration="1629000" />
       <workItem from="1670190121190" duration="982000" />
-      <workItem from="1670191119852" duration="743000" />
+      <workItem from="1670191119852" duration="1083000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1669995288896</created>
@@ -136,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670191858385</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated app">
+      <created>1670192066730</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670192066730</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
