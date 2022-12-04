@@ -1,22 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-// @ts-ignore
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-
-    components: false,
-    ssr: false,
-
-    modules: [
-        '@nuxt/content'
-    ],
-
-    vite: {
-        css: {
-            preprocessorOptions: {
-                scss: {
-                    additionalData: '@use "@/assets/_colors.scss" as *;'
-                }
-            }
-        }
-    }
-
+  modules: ['@nuxt/content']
 })
