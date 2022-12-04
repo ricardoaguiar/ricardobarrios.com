@@ -1,5 +1,5 @@
 <template>
   <main>
-    <ContentDoc />
+    App goes here
   </main>
 </template>
