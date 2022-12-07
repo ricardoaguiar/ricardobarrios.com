@@ -1,3 +1,3 @@
-# About Content v2
+# the about page goes here
 
 [Back home](/)
