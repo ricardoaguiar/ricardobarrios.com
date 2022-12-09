@@ -12,11 +12,13 @@ export default {
 
 <style scoped>
 .footer{
-  width: 100vw;
+width: 100%;
   height: 10rem;
+  position: fixed;
   bottom: 0;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.98);
+  color: white;
 }
 
 </style>

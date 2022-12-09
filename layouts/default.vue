@@ -7,17 +7,16 @@
 </template>
 
 <script>
-import Footer from "~/components/Footer.vue";
-
 export default {
   name: "default.vue",
-  components: {Header,Footer}
 }
 </script>
 
 <style scoped>
 .container{
   margin: 0;
+  padding: 0;
+  height: 80vh;
   background-color: #dedede
 }
 
