@@ -1,9 +1,8 @@
 <template>
   <main>
-    <NuxtLayout />
+    <ContentDoc />
   </main>
 </template>
-
 
 <script setup>
 const runtimeConfig = useRuntimeConfig();

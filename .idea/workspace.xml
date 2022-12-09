@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec21def-9448-4355-9fe6-91b512bfc8d7" name="Changes" comment="updated index.md">
-      <change afterPath="$PROJECT_DIR$/assets/20220530_amsterdam_3305.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global/ImageContainer.vue" afterDir="false" />
+    <list default="true" id="8ec21def-9448-4355-9fe6-91b512bfc8d7" name="Changes" comment="added test.md">
+      <change afterPath="$PROJECT_DIR$/assets/img/20220530_amsterdam_3305.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Content.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/content/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/nuxt.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/pages/[...slug].vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bak/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/[...slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[...slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +39,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,28 +53,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Volumes/4TSSD/ricardoaguiar.com/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/Users/ricardoaguiar/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.7571.168/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/4TSSD/ricardoaguiar.com/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ricardoaguiar/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.7571.168/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/bak" />
     </key>
@@ -104,7 +118,11 @@
       <workItem from="1670190121190" duration="982000" />
       <workItem from="1670191119852" duration="1420000" />
       <workItem from="1670259876119" duration="748000" />
-      <workItem from="1670262472623" duration="5683000" />
+      <workItem from="1670262472623" duration="6267000" />
+      <workItem from="1670345314263" duration="318000" />
+      <workItem from="1670443024214" duration="2558000" />
+      <workItem from="1670601437232" duration="721000" />
+      <workItem from="1670603396318" duration="3677000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1669995288896</created>
@@ -169,7 +187,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670192499026</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="updated index.md">
+      <created>1670274637661</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670274637661</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated about.md">
+      <created>1670443102906</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670443102906</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added test.md">
+      <created>1670523596066</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670523596066</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added test.md">
+      <created>1670603409982</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670603409982</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +237,8 @@
     <MESSAGE value="added contentdoc component" />
     <MESSAGE value="updated app" />
     <MESSAGE value="updated index.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated index.md" />
+    <MESSAGE value="updated about.md" />
+    <MESSAGE value="added test.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test.md" />
   </component>
 </project>
