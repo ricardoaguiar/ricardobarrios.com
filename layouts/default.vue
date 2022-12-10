@@ -1,24 +1,14 @@
 <template>
-  <div class="container">
-  <Header />
-    <slot />
-  <Footer />
-  </div>
+  <main class="container">
+    <Header />
+      <slot />
+    <Footer />
+  </main>
 </template>
 
-<script>
-export default {
-  name: "default.vue",
-}
-</script>
-
 <style scoped>
-.container{
-  margin: 0;
-  padding: 0;
-  height: 80vh;
-  width: 100%;
-  background-color: #dedede
+.container {
+  outline: 1px solid red;
 }
 
 </style>
