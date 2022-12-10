@@ -17,6 +17,7 @@ export default {
   margin: 0;
   padding: 0;
   height: 80vh;
+  width: 100%;
   background-color: #dedede
 }
 
