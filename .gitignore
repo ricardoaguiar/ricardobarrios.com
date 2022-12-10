@@ -7,3 +7,5 @@ node_modules
 .env
 dist
 bak
+/.idea/git_toolbox_prj.xml
+/.idea/aws.xml
