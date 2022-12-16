@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <Header />
-      <slot />
+      <ContentDoc />
     <Footer />
   </main>
 </template>
