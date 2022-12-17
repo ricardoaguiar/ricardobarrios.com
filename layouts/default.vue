@@ -8,7 +8,7 @@
 
 <style scoped>
 .container {
-  outline: 1px solid red;
+  height: 90vh;
 }
 
 </style>
