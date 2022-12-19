@@ -44,3 +44,13 @@ h1 {
 h2 {
     font-size: 1.1rem;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff7200;
+    text-decoration-thickness: .05rem;
+    text-underline-offset: .2rem;
+}
