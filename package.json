@@ -12,6 +12,7 @@
     "nuxt": "^3.0.0"
   },
   "dependencies": {
-    "@nuxt/image": "^0.7.1"
+    "@nuxt/image": "^0.7.1",
+    "prettier": "^2.8.1"
   }
 }

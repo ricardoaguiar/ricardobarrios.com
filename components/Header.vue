@@ -1,24 +1,36 @@
 <template>
   <header>
-    <NuxtLink to="/">
-      <h1>Ricardo Aguiar</h1>
-    </NuxtLink>
+    <Logo/>
     <nav>
-<!--      <template v-for="(n, i) in links" :key="`navLink-${i}`">-->
-        <NuxtLink
-            to="/about"
-        >
-          <div>
-            <span>About</span>
-          </div>
-
+      <template v-for="(n, i) in links" :key="`navLink-${i}`">
+        <NuxtLink>
+          <span> {{ n.name }}</span>
         </NuxtLink>
-<!--      </template>-->
+      </template>
     </nav>
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
+
+// const {data: BlogNav} = await useAsyncData("navigation"), () => {
+//   return fetchContentNavigation(queryContent("posts"));
+// });
+
+const links = [
+  {
+    name: 'About',
+    path: '/about'
+  },
+  {
+    name: 'Projects',
+    path: '/projects'
+  },
+  {
+    name: 'Contact',
+    path: '/contact'
+  }
+]
 
 </script>
 
@@ -33,6 +45,7 @@ header {
   width: 100%;
   background-color: rgba(211, 211, 211, 0.99);
 }
+
 nav {
   display: flex;
   justify-content: flex-end;
