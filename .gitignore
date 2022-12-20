@@ -5,6 +5,7 @@ node_modules
 .cache
 .output
 .env
-dist
-bak
 .idea
+*.idea*
+dist
+
