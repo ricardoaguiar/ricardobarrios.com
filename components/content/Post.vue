@@ -3,7 +3,7 @@
 
   <h1>Blog</h1>
   <ul>
-    <li v-for="{ _path: slug, title } in posts" :key="slug">
+    <li v-for="{ _path: slug, title } in posts" :key="slug" class="post">
       <NuxtLink :to="slug">{{ title }}</NuxtLink>
     </li>
   </ul>
@@ -30,5 +30,9 @@ const posts = await queryContent('/blog')
 </script>
 
 <style scoped>
-
+.post {
+  border: 1px solid #ccc;
+  width: 25%;
+  margin: 1rem;
+}
 </style>
