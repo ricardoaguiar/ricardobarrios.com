@@ -1,17 +1,11 @@
 <template>
-  <Header/>
-  <main>
-    <slot />
-    <Post />
-  </main>
-  <Footer/>
+  <ContentDoc />
 </template>
 
 <script>
 export default {
-  name: "index"
+  name: "Blog"
 }
-
 </script>
 
 <style scoped>

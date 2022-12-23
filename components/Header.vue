@@ -13,9 +13,7 @@
 
 <script setup>
 
-// const {data: BlogNav} = await useAsyncData("navigation"), () => {
-//   return fetchContentNavigation(queryContent("posts"));
-// });
+
 
 const links = [
   {
