@@ -1,16 +1,13 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
-// @ts-ignore
-export default defineNuxtConfig({
-  // runtimeConfig: {
-  // cloudinary: {
-  //   cloudName: 'ricardoaguiar',
-  //   apiKey: '156199364169677',
-  //   apiSecret: 'qJprZ5Fy4-JD6BHoK2ykmg95Zqc',
-  //   secure: true,
-  //   useComponent: true
-  // }
-  // },
 
+import tailwindConfig from './tailwind.config';
+
+const tailwindcss = {
+    config: {
+        ...tailwindConfig
+    },
+};
+
+export default defineNuxtConfig({
 
   components: true,
 
@@ -45,7 +42,9 @@ export default defineNuxtConfig({
     },
     },
 
-  css: ['@/assets/css/global.css'],
+
+
+  css: ['@/assets/css/global.css', '@/assets/css/main.css'],
 
   modules: [
     '@nuxt/content',
@@ -53,3 +52,5 @@ export default defineNuxtConfig({
   ]
 
 })
+
+

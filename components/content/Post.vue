@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <section class="border border-gray-300 shadow-md">
 
   <h1>Blog</h1>
-  <ul>
+  <ul class="border border-gray-300 shadow-md">
     <li v-for="{ _path: slug, title } in posts" :key="slug" class="post">
       <NuxtLink :to="slug">{{ title }}</NuxtLink>
     </li>
@@ -10,7 +10,7 @@
   <p>{{title}}</p>
   <p>{{description}}</p>
   <slot />
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
