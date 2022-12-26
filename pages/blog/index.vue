@@ -1,52 +1,48 @@
 <script setup>
-import {convertDate} from '~/utils';
+import { convertDate } from '~/utils';
 
-const contentQuery = await queryContent('blog').sort({author: 0}).find();
+const contentQuery = await queryContent('blog').sort({ author: 0 }).find();
 console.log(contentQuery);
 </script>
 
 <template>
-  <main class="bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pb-28 lg:pb-28 lg:pt-24">
-    <div class="mx-w-lg lg:mx-w-7xl mx-auto">
-      <div class="mb-10 border-b border-gray-200 pb-10">
-        <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Blog</h2>
-      </div>
-      <div
-          class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-x-6"
-      >
-        <div
-            v-for="article in contentQuery"
-            :key="article._path"
-            class="flex flex-col justify-between border border-gray-300"
-        >
-          <nuxt-link :href="article._path" class="p-4">
-            <h3 class="text-lg font-medium text-gray-900">
-              {{ article.title }}
-            </h3>
-            <p class="mt-3 text-gray-700">{{ article.description }}</p>
-          </nuxt-link>
-          <div class="mt-6 p-4">
-            <a :href="`?author=${article.author}`" class="pr-4 text-sm text-gray-700">
-              {{ article.author }}
-            </a>
-            <time class="text-sm text-gray-700" datetime="2023-01-01T00:00">
-              {{ convertDate(article.date) }}
-            </time>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+	<main class="bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pb-28 lg:pb-28 lg:pt-24">
+		<div class="mx-w-lg lg:mx-w-7xl mx-auto">
+			<div class="mb-10 border-b border-gray-200 pb-10">
+				<h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Blog</h2>
+			</div>
+			<div
+				class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-x-6"
+			>
+				<div
+					v-for="article in contentQuery"
+					:key="article._path"
+					class="flex flex-col justify-between border border-gray-300"
+				>
+					<nuxt-link :href="article._path" class="p-4">
+						<h3 class="text-lg font-medium text-gray-900">
+							{{ article.title }}
+						</h3>
+						<p class="mt-3 text-gray-700">{{ article.description }}</p>
+					</nuxt-link>
+					<div class="mt-6 p-4">
+						<a :href="`?author=${article.author}`" class="pr-4 text-sm text-gray-700">
+							{{ article.author }}
+						</a>
+						<time class="text-sm text-gray-700" datetime="2023-01-01T00:00">
+							{{ convertDate(article.date) }}
+						</time>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </template>
 
 <script>
 export default {
-  name: 'index'
+	name: 'index'
 };
 </script>
 
-<style scoped>
-.card {
-  outline: 1px solid red;
-}
-</style>
+<style scoped></style>
