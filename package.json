@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 3030",
+    "dev": "nuxt dev --port 9000",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^0.7.1",
+    "@nuxtjs/tailwindcss": "^6.2.0",
     "prettier": "^2.8.1",
     "tailwind": "^4.0.0"
   }

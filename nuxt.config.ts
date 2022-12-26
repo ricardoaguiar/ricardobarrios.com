@@ -1,14 +1,5 @@
-
-import tailwindConfig from './tailwind.config';
-
-const tailwindcss = {
-    config: {
-        ...tailwindConfig
-    },
-};
-
+// @ts-ignore
 export default defineNuxtConfig({
-
   components: true,
 
   content: {
@@ -17,40 +8,36 @@ export default defineNuxtConfig({
       toc: {
         depth: 3,
         searchDepth: 3,
-      }
+      },
     },
     highlight: {
-        theme: {
-            default: 'material-palenight',
-            dark: 'material-darker',
-            sepa: 'material-ocean',
-        },
-        preload: [
-            'vue-html',
-            'json',
-            'bash',
-            'ts',
-            'tsx',
-            'js',
-            'jsx',
-            'yaml',
-            'graphql',
-            'md',
-            'svelte',
-            'astro',
-        ],
+      theme: {
+        default: "material-palenight",
+        dark: "material-darker",
+        sepa: "material-ocean",
+      },
+      preload: [
+        "vue-html",
+        "json",
+        "bash",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "yaml",
+        "graphql",
+        "md",
+        "svelte",
+        "astro",
+      ],
     },
-    },
+  },
 
+  css: ["@/assets/css/global.css", "@/assets/css/main.css"],
 
+  modules: ["@nuxt/content", "@nuxt/image-edge", "@nuxtjs/tailwindcss"],
 
-  css: ['@/assets/css/global.css', '@/assets/css/main.css'],
-
-  modules: [
-    '@nuxt/content',
-    '@nuxt/image-edge'
-  ]
-
-})
-
-
+  tailwindcss: {
+    viewer: true,
+  },
+});

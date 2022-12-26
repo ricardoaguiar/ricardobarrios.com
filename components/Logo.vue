@@ -1,15 +1,13 @@
 <template>
-  <NuxtLink to="/">
-    <h1>Ricardo Aguiar</h1>
-  </NuxtLink>
+	<NuxtLink to="/">
+		<h1 class="uppercase font-medium">Ricardo Aguiar</h1>
+	</NuxtLink>
 </template>
 
 <script>
 export default {
-  name: "Logo"
-}
+	name: 'Logo'
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
