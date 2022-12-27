@@ -6,6 +6,7 @@ console.log(contentQuery);
 </script>
 
 <template>
+	<Header />
 	<main class="bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pb-28 lg:pb-28 lg:pt-24">
 		<div class="mx-w-lg lg:mx-w-7xl mx-auto">
 			<div class="mb-10 border-b border-gray-200 pb-10">
@@ -37,6 +38,7 @@ console.log(contentQuery);
 			</div>
 		</div>
 	</main>
+	<Footer />
 </template>
 
 <script>
