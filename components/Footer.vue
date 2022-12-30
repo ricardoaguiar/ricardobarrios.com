@@ -1,5 +1,5 @@
 <template>
-	<div class="footer">footer</div>
+	<div class="bg-gray-800 fixed bottom-0 text-white p-4 w-full">footer</div>
 </template>
 
 <script>
@@ -9,14 +9,5 @@ export default {
 </script>
 
 <style scoped>
-.footer {
-	width: 100%;
-	height: 4rem;
-	margin: 0 auto;
-	background: rgba(0, 0, 0, 0.9);
-	color: white;
-	position: fixed;
-  bottom: 0;
-  padding: 1rem;
-}
+
 </style>
