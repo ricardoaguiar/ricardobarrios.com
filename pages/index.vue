@@ -28,7 +28,7 @@ const query: QueryBuilderParams = {
 					View Blog
 				</nuxt-link>
 			</div>
-		</div>
+    </div>
 		<ContentList v-slot="{ list }" :query="query">
 			<ul class="grid grid-cols-2 align-items-center">
 				<li v-for="article in list" :key="article._path" class="p-8 border-b border-r h-96">
