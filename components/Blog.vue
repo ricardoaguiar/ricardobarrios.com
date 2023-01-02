@@ -1,10 +1,15 @@
 <template>
-  <ContentDoc />
+  <NuxtLayout :name="layout">
+   <ContentDoc />
+  </NuxtLayout>
+
 </template>
 
-<script>
+<script setup>
+const layout = 'post'
+
 export default {
-  name: "Blog"
+  name: "Blog",
 }
 </script>
 
