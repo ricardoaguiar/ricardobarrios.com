@@ -1,6 +1,5 @@
 <template>
   <section class="border border-gray-300 shadow-md">
-
   <h1>Blog</h1>
   <ul class="border border-gray-300 shadow-md">
     <li v-for="{ _path: slug, title } in posts" :key="slug" class="post">
@@ -9,7 +8,7 @@
   </ul>
   <p>{{title}}</p>
   <p>{{description}}</p>
-  <slot />
+<!--  <slot />-->
   </section>
 </template>
 

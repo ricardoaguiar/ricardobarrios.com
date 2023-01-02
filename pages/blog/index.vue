@@ -5,7 +5,6 @@ const contentQuery = await queryContent('blog').sort({ author: 0 }).find();
 </script>
 
 <template>
-	<Header />
 	<main class="bg-white px-4 pt-10 pb-20 sm:px-6 lg:px-8 lg:pb-28 lg:pb-28 lg:pt-12">
 		<div class="mx-w-lg lg:mx-w-7xl mx-auto">
 			<div class="mb-8 border-b border-gray-200 pb-4">
@@ -37,7 +36,7 @@ const contentQuery = await queryContent('blog').sort({ author: 0 }).find();
 			</div>
 		</div>
 	</main>
-	<Footer />
+
 </template>
 
 <script>

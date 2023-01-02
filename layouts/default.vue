@@ -1,14 +1,7 @@
 <template>
-  <main class="container">
+  <main>
     <Header />
-      <ContentDoc />
+      <NuxtPage />
     <Footer />
   </main>
 </template>
-
-<style scoped>
-.container {
-  height: 90vh;
-}
-
-</style>

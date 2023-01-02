@@ -1,6 +1,9 @@
 // @ts-ignore
 export default defineNuxtConfig({
-  components: true,
+  components:{
+    global: true,
+    dirs: ['~/components/global']
+  },
 
   content: {
     documentDriven: true,
@@ -10,6 +13,7 @@ export default defineNuxtConfig({
         searchDepth: 3,
       },
     },
+
     highlight: {
       theme: {
         default: "material-palenight",
