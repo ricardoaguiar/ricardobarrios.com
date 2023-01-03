@@ -8,6 +8,7 @@ const query: QueryBuilderParams = {
 </script>
 
 <template>
+  <div>
 		<div class="border-b grid">
 			<div class="container mx-auto m-16 p-10 flex flex-col">
 				<h1 class="text-3xl text-gray-700 pb-2">Hi, I'm Ricardo Aguiar</h1>
@@ -47,7 +48,7 @@ const query: QueryBuilderParams = {
 				</li>
 			</ul>
 		</ContentList>
-
+  </div>
 </template>
 
 <style scoped></style>

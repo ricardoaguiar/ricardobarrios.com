@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components/global']
   },
+  pages: true,
 
   content: {
     documentDriven: true,
