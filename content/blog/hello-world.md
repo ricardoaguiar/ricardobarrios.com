@@ -2,6 +2,7 @@
 title: "Hello"
 author: "Ricardo"
 date: "2023-02-01"
+layout: 'post' 
 ---
 
 # Hello World

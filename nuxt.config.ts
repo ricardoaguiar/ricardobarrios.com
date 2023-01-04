@@ -73,5 +73,5 @@ export default defineNuxtConfig({
         quality: 'auto:best',
       }
     }
-  }
+  },
 });
