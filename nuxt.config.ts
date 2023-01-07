@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 
   css: ["@/assets/css/global.css", "@/assets/css/main.css"],
 
-  modules: ["@nuxt/content", "@nuxt/image-edge", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/content", "@nuxt/image-edge", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
 
   tailwindcss: {
     viewer: true,
@@ -74,4 +74,5 @@ export default defineNuxtConfig({
       }
     }
   },
+
 });
