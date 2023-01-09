@@ -1,0 +1,1 @@
+export const useMyState = () =>  useState(() => ({count: 0}));
