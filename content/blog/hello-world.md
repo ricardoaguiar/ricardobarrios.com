@@ -18,3 +18,4 @@ Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
 generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
 injected humour, or non-characteristic words etc.
 
+![](https://res.cloudinary.com/ricardoaguiar/image/upload/v1625499913/blog/mallorca2_negr4e.jpg)

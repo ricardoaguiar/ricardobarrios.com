@@ -8,6 +8,8 @@
 const layout = 'post';
 export default {
   name: "[...slug].vue"
+
+
 }
 </script>
 

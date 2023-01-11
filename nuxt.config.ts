@@ -1,5 +1,8 @@
 // @ts-ignore
 export default defineNuxtConfig({
+  // experimental: {
+  //   payloadExtraction: true,
+  // },
   components:{
     global: true,
     dirs: ['~/components/global']
@@ -73,6 +76,5 @@ export default defineNuxtConfig({
         quality: 'auto:best',
       }
     }
-  },
-
+  }
 });
