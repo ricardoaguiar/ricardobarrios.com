@@ -1,11 +1,16 @@
-## Hello world
-# subtitle
-
-this is a md example
-
-::post
 ---
-title: Home Page
-description:  We are working on something here.
+Title: 'Ricardo Aguiar - Blog'
+Description: 'Ricardo Aguiar - Blog'
+Date: 2023-01-01 00:00:00
 ---
-::
+
+# Hi I'm Ricardo
+## Welcome to my blog
+
+I am passionate about learning and growing, and writing is a powerful
+way to process and reflect on the world around us. I have lived abroad for over three
+decades, which has been a life-changing experience. It has pushed me out of my comfort
+zone, helped me to become more open-minded, and taught me so much about myself and the
+world around me. I hope that sharing my experiences will inspire you to explore your
+untapped potential and propel you to evolve into the best version of yourself.
+
