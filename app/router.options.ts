@@ -1,3 +1,5 @@
+/*
+
 import type { RouterOptions } from "@nuxt/schema"
 
 // https://router.vuejs.org/api/interfaces/routeroptions.html
@@ -26,5 +28,6 @@ export default <RouterOptions>{
 
         if (to.fullPath === from.fullPath) return
         return { left: 0, top: 0, behavior: "smooth" }
-    },
+        },
 }
+*/
