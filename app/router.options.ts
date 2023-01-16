@@ -9,10 +9,12 @@ export default <RouterOptions>{
 
         if (subdomain.value) {
             const userRoute = _routes.filter((i) => i.path.includes("/user/:siteId"))
-            return userRoute.map((i) => ({
+            const userRouteMapped = userRoute.map((i) => ({
                 ...i,
                 path: i.path === "/user/:siteId" ? i.path.replace("/user/:siteId", "/") : i.path.replace("/user/:siteId/", "/"),
             }))
+
+            return userRouteMapped
         }
     },
     scrollBehavior(to, from, savedPosition) {
