@@ -10,8 +10,9 @@ const state = useMyState();
 
  <template>
   <div>
-    <NuxtLayout>
-       <NuxtPage />
-    </NuxtLayout>
+<!--    <NuxtLayout>-->
+<!--       <NuxtPage />-->
+<!--    </NuxtLayout>-->
+    hi
   </div>
 </template>
