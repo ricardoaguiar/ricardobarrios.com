@@ -18,6 +18,7 @@ const query: QueryBuilderParams = {
 <!--				>-->
 <!--					View Blog-->
 <!--				</nuxt-link>-->
+        <Hero />
 			</div>
     </div>
 		<ContentList v-slot="{ list }" :query="query">

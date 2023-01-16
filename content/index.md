@@ -14,3 +14,6 @@ zone, helped me to become more open-minded, and taught me so much about myself a
 world around me. I hope that sharing my experiences will inspire you to explore your
 untapped potential and propel you to evolve into the best version of yourself.
 
+::hero
+![](https://res.cloudinary.com/ricardoaguiar/image/upload/v1625499913/blog/mallorca4.jpg)
+::

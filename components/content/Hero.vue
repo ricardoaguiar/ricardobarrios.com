@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import{ computed } from 'vue';
+
 defineProps({
   cta: {
     type: Array,
@@ -18,6 +20,7 @@ defineProps({
   },
 })
 
+let img = computed(() => props.img);
 const backgroundImg = computed(() => img ? `url(${img})` : '')
 
 const style = computed(() => ({
@@ -27,7 +30,7 @@ const style = computed(() => ({
 
 <template>
   <div class="border border-2s" :style="backgroundImg">
-<!--    <img  :src="img"/>-->
+    <img alt="backgroundImg"  :src="backgroundImg"/>
   </div>
 </template>
 
