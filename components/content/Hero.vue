@@ -29,8 +29,8 @@ const style = computed(() => ({
 </script>
 
 <template>
-  <div class="border border-2s" :style="backgroundImg">
-    <img alt="backgroundImg"  :src="backgroundImg"/>
+  <div class="border border-2s">
+<!--    <img alt="backgroundImg"  :src="backgroundImg"/>-->
   </div>
 </template>
 
