@@ -12,12 +12,12 @@ const query: QueryBuilderParams = {
 		<div class="border-b grid">
 			<div class="container mx-auto m-16 p-10 flex flex-col">
         <ContentDoc class="text-left text-lg text-black font-light pb-8"/>
-<!--				<nuxt-link-->
-<!--					class="border-1 mx-auto rounded border bg-gray-800 px-4 py-2 text-white justify-center"-->
-<!--					to="/blog"-->
-<!--				>-->
-<!--					View Blog-->
-<!--				</nuxt-link>-->
+				<nuxt-link
+					class="border-1 mx-auto rounded border bg-gray-800 px-4 py-2 text-white justify-center"
+					to="/blog"
+				>
+					View Blog
+				</nuxt-link>
 <!--        <Hero />-->
 			</div>
     </div>
