@@ -1,15 +1,14 @@
-export default defineEventHandler(({ req, res, context }) => {
-    const hostname = req.headers.host || "ricardoaguiar.com"
-
-    const mainDomain = ["localhost:3000", "ricardoaguiar.com"]
+import { mainDomain } from "@/constData/app";
+import { getCookie } from "h3";
+export default defineEventHandler((event) => {
+    let subdomain = getCookie(event, "subdomain") || null;
+    const hostname = event.req.headers.host || "ricardoaguiar.com"
 
     if (!mainDomain.includes(hostname)) {
-        const currentHost =
-            process.env.NODE_ENV === "production" && process.env.VERCEL === "1"
-                ? hostname.replace(`.ricardoaguiar.com`, "")
-                : hostname.replace(`.localhost:3000`, "")
-
-        console.log({ currentHost })
-        context.subdomain = currentHost
+        const currentHost = hostname.match(/^[^.]*/g)[0];
+        event.context.subdomain = currentHost;
+        setCookie(event, "subdomain", currentHost);
+        if(event.req.headers.referer)
+            setCookie(event, "currentUrl", event.req.headers.referer);
     }
-})
+}) 

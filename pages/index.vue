@@ -9,9 +9,6 @@ const query: QueryBuilderParams = {
 
 <template>
   <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
 		<div class="border-b grid">
 			<div class="container mx-auto m-16 p-10 flex flex-col">
         <ContentDoc class="text-left text-lg text-black font-light pb-8"/>

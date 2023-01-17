@@ -4,15 +4,15 @@ useHead({
   titleTemplate: title => (title ? `${title} - Ricardo Aguiar` : 'Ricardo Aguiar'),
 })
 
-const state = useMyState();
 </script>
 
 
  <template>
   <div>
-<!--    <NuxtLayout>-->
-<!--       <NuxtPage />-->
-<!--    </NuxtLayout>-->
-    hi
+    <NuxtLayout>
+       <NuxtPage />
+    </NuxtLayout>
+
+
   </div>
 </template>

@@ -1,3 +1,3 @@
-export const useSubdomain = () => useState<string>("subdomain", () =>  '')
 
-// Path: composables/subdomain.ts
+// @ts-ignore
+export const useSubdomain = () => useState<string>("subdomain", () => null)
