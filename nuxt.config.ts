@@ -9,6 +9,10 @@ export default defineNuxtConfig({
   },
   pages: true,
 
+  generate: {
+    routes: [],
+  },
+
   content: {
     documentDriven: true,
     markdown: {

@@ -9,9 +9,8 @@ useHead({
 
  <template>
   <div>
-<!--    <NuxtLayout>-->
-<!--       <NuxtPage />-->
-<!--    </NuxtLayout>-->
-    hi
+    <NuxtLayout>
+       <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
