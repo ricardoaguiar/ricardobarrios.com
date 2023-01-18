@@ -1,1 +1,0 @@
-export const mainDomain = ["localhost:3000", "ricardoaguiar.com"]
