@@ -17,12 +17,6 @@ It has survived not only five centuries, but also the leap into electronic types
 unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-
-
-Try to navigate to [/about](/content/about.md). These 2 pages are rendered by the `pages/[...slug].vue` component.
-
----
-
 Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
 
 ![](https://res.cloudinary.com/ricardoaguiar/image/upload/v1625499912/blog/greece2_y2mlpn.jpg)
