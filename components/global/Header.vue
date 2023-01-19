@@ -1,32 +1,20 @@
 <template>
-	<header>
-		<Logo />
-		<nav class="gap-2">
-			<template v-for="(link, i) in links" :key="`navLink-${i}`">
-				<NuxtLink>
-					<span class="cursor-pointer font-medium">{{ link.name }}</span>
-				</NuxtLink>
-			</template>
-		</nav>
-	</header>
+  <header>
+    <Logo />
+    <nav>
+    <ContentNavigation v-slot="{ navigation }" >
+      <ul class="flex-row flex gap-2">
+        <li v-for="link of navigation" :key="link._path">
+          <NuxtLink :to="link._path">
+            <span class="cursor-pointer font-medium">{{ link.title }}</span>
+          </NuxtLink>
+        </li>
+      </ul>
+    </ContentNavigation>
+    </nav>
+  </header>
 </template>
 
-<script setup>
-const links = [
-	{
-		name: 'Blog',
-		path: 'blog.'
-	},
-	{
-		name: 'About',
-		path: '/about'
-	},
-	{
-		name: 'Contact',
-		path: '/contact'
-	}
-];
-</script>
 
 <style scoped>
 header {
@@ -40,9 +28,4 @@ header {
 	background-color: rgba(211, 211, 211, 0.99);
 }
 
-nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
 </style>

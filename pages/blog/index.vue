@@ -8,17 +8,17 @@ const formatter = Intl.DateTimeFormat(undefined, {
 });
 
 
-// const contentQuery = await queryContent('blog').only('_path', 'title').sort({ author: 0 }).find();
-const { data: contentQuery } = useAsyncData(
-	() => queryContent('blog').only(['_path', 'title', 'date']).find(),
-	{
-		transform: (data) =>
-			data.map((x) => ({
-				...x,
-				textDate: formatter.format(new Date(x.date))
-			}))
-	}
-);
+const contentQuery = await queryContent('blog').only('_path').find();
+// const { data: contentQuery } = useAsyncData(
+// 	() => queryContent('blog').only(['_path', 'title', 'date']).find(),
+// 	{
+// 		transform: (data) =>
+// 			data.map((x) => ({
+// 				...x,
+// 				textDate: formatter.format(new Date(x.date))
+// 			}))
+// 	}
+// );
 </script>
 
 <template>

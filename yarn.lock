@@ -5045,6 +5045,13 @@ nth-check@^2.0.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
+nuxt-storm@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/nuxt-storm/-/nuxt-storm-1.1.3.tgz#1972e97ca91aa59df3eaac16a9499e44d418ce96"
+  integrity sha512-zo9hWSoWVxy2vUF/o6jmvlUNq1Fuff/wHnNny1CLGBktj5lL+b2M83DxGKYP3DeTgjeSEdwTaLmA/QnxlHbrOw==
+  dependencies:
+    consola "^2.15.3"
+
 "nuxt@npm:nuxt3@latest":
   version "3.0.1-rc.0-27894335.0db3c63"
   resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.1-rc.0-27894335.0db3c63.tgz#f6a51da409afdf1e96a1670a1e2acae390a2393e"
