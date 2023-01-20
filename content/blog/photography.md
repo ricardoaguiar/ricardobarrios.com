@@ -1,7 +1,7 @@
 ---
-title: "Photography"
-author: "Ricardo"
-date: "2023-01-01"
+title: photography
+author: ricardo
+date: 2023-01-01
 ---
 
 # Photography

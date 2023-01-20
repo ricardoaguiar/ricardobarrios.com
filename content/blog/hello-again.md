@@ -1,7 +1,7 @@
 ---
-title: "Hello"
-author: "Ricardo"
-date: "2023-02-01"
+title: hi
+author: ricardo
+date: 2023-02-01
 ---
 
 # Hello World

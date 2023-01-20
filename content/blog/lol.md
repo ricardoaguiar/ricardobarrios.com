@@ -1,8 +1,8 @@
 ---
-title: "Hello, is it me you're looking for?"
-author: "Me again"
-date: "2023-01-01"
-layout: 'post'
+title: life lessons
+author: ricardo
+date: 2023-01-01
+layout: post
 ---
 
 

@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { convertDate } from '~/utils';
+
 
 const formatter = Intl.DateTimeFormat(undefined, {
 	year: 'numeric',
@@ -7,18 +7,7 @@ const formatter = Intl.DateTimeFormat(undefined, {
 	day: 'numeric'
 });
 
-
-const contentQuery = await queryContent('blog').only('_path').find();
-// const { data: contentQuery } = useAsyncData(
-// 	() => queryContent('blog').only(['_path', 'title', 'date']).find(),
-// 	{
-// 		transform: (data) =>
-// 			data.map((x) => ({
-// 				...x,
-// 				textDate: formatter.format(new Date(x.date))
-// 			}))
-// 	}
-// );
+const { data: posts } = await useAsyncData('posts', () => queryContent('/blog').find());
 </script>
 
 <template>
@@ -35,29 +24,21 @@ const contentQuery = await queryContent('blog').only('_path').find();
 					gap-y-12 gap-x-6
 					sm:grid-cols-2 sm:gap-x-8
 					lg:grid-cols-3 lg:gap-x-6
+					h-full
+					border
+					border-2
+					p-4
 				"
 			>
+        <ul>
+          <li v-for="post in posts" :key="post._id">
+            <NuxtLink :to="post._path">
+              {{ post.title }}
+            </NuxtLink>
+          </li>
+        </ul>
 
-				<div
-					v-for="article in contentQuery"
-					:key="article._path"
-					class="flex flex-col justify-between border border-gray-300"
-				>
-					<nuxt-link :href="article._path" class="p-4">
-						<h3 class="text-lg font-medium text-gray-900">
-							{{ article.title }}
-						</h3>
-						<p class="mt-3 text-gray-700">{{ article.description }}</p>
-					</nuxt-link>
-					<div class="mt-6 p-4">
-						<a :href="`?author=${article.author}`" class="pr-4 text-sm text-gray-700">
-							{{ article.author }}
-						</a>
-						<time class="text-sm text-gray-700" datetime="2023-01-01T00:00">
-							{{ convertDate(article.date) }}
-						</time>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</main>
