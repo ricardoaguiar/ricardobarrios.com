@@ -5,7 +5,7 @@
 <template>
   <div class="container">
     <Header />
-    <div class="bg-gray-800 w-8/12 m-auto">
+    <div class="w-8/12 m-auto">
       <slot />
     </div>
     <div v-if="next" class="flex justify-center flex-row">
