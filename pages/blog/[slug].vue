@@ -10,11 +10,11 @@ const { data } = await useAsyncData(`content-${route.path}`,
 
 
 <template>
-<!--  <div class="container bg-white mx-auto m-16 p-10 w-full">-->
+  <div class="container bg-white mx-auto m-16 p-10 w-full">
   <main>
     <ContentRenderer :value="data"/>
   </main>
-<!--  </div>-->
+  </div>
 </template>
 
 
