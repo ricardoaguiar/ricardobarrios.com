@@ -1,4 +1,17 @@
 // @ts-ignore
+
+import AliasPlugin from 'enhanced-resolve/lib/AliasPlugin';
+import path from 'path';
+
+const aliases = [
+  {
+    name: '@',
+    alias: [path.resolve(__dirname, './rb-site/'), path.resolve(__dirname, './')]
+  }
+];
+
+const aliasesPlugin = new AliasPlugin('described-resolve', aliases, 'resolve');
+
 export default defineNuxtConfig({
   // experimental: {
   //   payloadExtraction: true,
@@ -79,4 +92,17 @@ export default defineNuxtConfig({
     }
   },
   debug: true,
+
+   build  : {
+    // @ts-ignore
+     cssSourceMap: false,
+
+     extend(config: any, ctx: any) { // eslint-disable-line
+       config.resolve.plugins.push(aliasesPlugin);
+
+       if (ctx.isClient) {
+         config.devtool = 'source-map';
+       }
+     }
+   }
 });
