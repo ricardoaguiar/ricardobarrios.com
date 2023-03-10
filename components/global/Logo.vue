@@ -1,13 +1,16 @@
 <template>
 	<NuxtLink to="/">
-		<h1 class="uppercase font-medium">Ricardo Aguiar</h1>
+		<h1 class="uppercase font-medium">RB</h1>
 	</NuxtLink>
 </template>
 
-<script>
+<script setup>
 export default {
 	name: 'Logo'
 };
+
 </script>
+
+
 
 <style scoped></style>
