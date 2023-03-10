@@ -3,7 +3,6 @@ useHead({
   title: '',
   titleTemplate: title => (title ? `${title} - Ricardo Barrios` : 'Ricardo Barrios'),
 })
-
 </script>
 
 
