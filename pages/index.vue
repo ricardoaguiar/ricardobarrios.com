@@ -5,6 +5,8 @@
 // 	path: '/blog',
 // 	limit: 5
 // };
+
+//comment
 </script>
 
 <template>
