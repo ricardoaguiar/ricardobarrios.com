@@ -1,4 +1,5 @@
 // @ts-ignore
+
 import { resolve } from 'path';
 
 export default defineNuxtConfig({
@@ -6,17 +7,14 @@ export default defineNuxtConfig({
 
   components: [
     { path: '~/versions/components',  pathPrefix: false },
-    { path: '~/components',  pathPrefix: false}
+    { path: '~/components',  pathPrefix: false},
   ],
-
   content: {
+    base: resolve(__dirname, "content"),
     sources:{
       content: {
         driver: 'fs',
-        base: resolve(__dirname, 'content'),
-        options: {
-          path: resolve(__dirname, "content"),
-        }
+        base: resolve(__dirname, "versions/content"),
       }
     },
     documentDriven: true,
@@ -85,6 +83,7 @@ export default defineNuxtConfig({
         quality: 'auto:best',
       }
     }
-  }
+  },
 });
+
 
