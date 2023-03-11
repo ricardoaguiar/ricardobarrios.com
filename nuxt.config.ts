@@ -1,24 +1,21 @@
 // @ts-ignore
-
-// import AliasPlugin from 'enhanced-resolve/lib/AliasPlugin';
 import { resolve } from 'path';
 
 export default defineNuxtConfig({
+  pages: true,
 
   components: [
-    { path: '~/versions/components',  pathPrefix: false, global: true },
-    '~/components',
+    { path: '~/versions/components',  pathPrefix: false },
+    { path: '~/components',  pathPrefix: false}
   ],
-
-  pages: true,
 
   content: {
     sources:{
       content: {
         driver: 'fs',
-        base: resolve(__dirname, "versions/content"),
+        base: resolve(__dirname, 'content'),
         options: {
-            path: resolve(__dirname, "content"),
+          path: resolve(__dirname, "content"),
         }
       }
     },
@@ -88,9 +85,6 @@ export default defineNuxtConfig({
         quality: 'auto:best',
       }
     }
-  },
-  debug: true,
-
+  }
 });
-
 
