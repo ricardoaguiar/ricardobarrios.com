@@ -1,6 +1,4 @@
 // @ts-ignore
-
-// import AliasPlugin from 'enhanced-resolve/lib/AliasPlugin';
 import { resolve } from 'path';
 
 export default defineNuxtConfig({
@@ -87,8 +85,6 @@ export default defineNuxtConfig({
         quality: 'auto:best',
       }
     }
-  },
-  debug: true,
-
+  }
 });
 
