@@ -6,7 +6,7 @@ import path from 'path';
 const aliases = [
   {
     name: '@',
-    alias: [path.resolve(__dirname, './rb-site/'), path.resolve(__dirname, './')]
+    alias: [path.resolve(__dirname, './child-sites/'), path.resolve(__dirname, './')]
   }
 ];
 
