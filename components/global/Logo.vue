@@ -1,6 +1,6 @@
 <template>
 	<NuxtLink to="/">
-		<h1 class="uppercase font-medium">Ricardo Aguiar</h1>
+		<h1 class="uppercase font-medium">RAr</h1>
 	</NuxtLink>
 </template>
 
