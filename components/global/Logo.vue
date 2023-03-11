@@ -1,6 +1,6 @@
 <template>
 	<NuxtLink to="/">
-		<h1 class="uppercase font-medium">RB</h1>
+		<h1 class="uppercase font-medium">RA</h1>
 	</NuxtLink>
 </template>
 
@@ -8,9 +8,6 @@
 export default {
 	name: 'Logo'
 };
-
 </script>
-
-
 
 <style scoped></style>
