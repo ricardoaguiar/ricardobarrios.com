@@ -6,7 +6,7 @@
       <ul class="flex-row flex gap-2">
         <li v-for="link of navigation" :key="link._path">
           <NuxtLink :to="link._path">
-            <span class="cursor-pointer font-medium">{{ link.title }}</span>
+            <span class="cursor-pointer font-medium text-white">{{ link.title }}</span>
           </NuxtLink>
         </li>
       </ul>
@@ -25,7 +25,8 @@ header {
 	margin: 0;
 	padding: 1rem;
 	width: 100%;
-	background-color: rgba(211, 211, 211, 0.99);
+  background-color: dimgray;
 }
+
 
 </style>

@@ -1,29 +1,27 @@
 // @ts-ignore
 
-import AliasPlugin from 'enhanced-resolve/lib/AliasPlugin';
-import path from 'path';
-
-const aliases = [
-  {
-    name: '@',
-    alias: [path.resolve(__dirname, './child-sites/'), path.resolve(__dirname, './')]
-  }
-];
-
-const aliasesPlugin = new AliasPlugin('described-resolve', aliases, 'resolve');
+// import AliasPlugin from 'enhanced-resolve/lib/AliasPlugin';
+import { resolve } from 'path';
 
 export default defineNuxtConfig({
-  // experimental: {
-  //   payloadExtraction: true,
-  // },
-  components:{
-    global: true,
-    dirs: ['~/components/global']
-  },
+
+  components: [
+    { path: '~/versions/components',  pathPrefix: false, global: true },
+    '~/components',
+  ],
+
   pages: true,
 
-
   content: {
+    sources:{
+      content: {
+        driver: 'fs',
+        base: resolve(__dirname, "versions/content"),
+        options: {
+            path: resolve(__dirname, "content"),
+        }
+      }
+    },
     documentDriven: true,
     markdown: {
       toc: {
@@ -93,16 +91,6 @@ export default defineNuxtConfig({
   },
   debug: true,
 
-   build  : {
-    // @ts-ignore
-     cssSourceMap: false,
-
-     extend(config: any, ctx: any) { // eslint-disable-line
-       config.resolve.plugins.push(aliasesPlugin);
-
-       if (ctx.isClient) {
-         config.devtool = 'source-map';
-       }
-     }
-   }
 });
+
+
