@@ -1,29 +1,30 @@
 // @ts-ignore
 
-import { resolve } from 'path';
+import {path, resolve} from 'path';
 
 export default defineNuxtConfig({
   pages: true,
 
   components: [
-    { path: '~/versions/components',  pathPrefix: false },
-    { path: '~/components',  pathPrefix: false},
+    {path: '~/versions/components', pathPrefix: false},
+    {path: '~/components', pathPrefix: false},
   ],
+
+  /*
   content: {
-    base: resolve(__dirname, "content"),
-    sources:{
-      content: {
-        driver: 'fs',
-        base: resolve(__dirname, "versions/content"),
-      }
+  //   sources: {
+  //     versions: {
+  //       driver: 'fs',
+  //       base: resolve(__dirname, 'versions/content')
+  //     }
+  //   },
+  documentDriven: true,
+  markdown: {
+    toc: {
+      depth: 3,
+      searchDepth: 3,
     },
-    documentDriven: true,
-    markdown: {
-      toc: {
-        depth: 3,
-        searchDepth: 3,
-      },
-    },
+  },
 
     highlight: {
       theme: {
@@ -47,7 +48,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+*/
   css: ["@/assets/css/global.css", "@/assets/css/main.css"],
 
   modules: ["@nuxt/content", "@nuxt/image-edge", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
